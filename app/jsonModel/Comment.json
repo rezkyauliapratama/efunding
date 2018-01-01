@@ -11,12 +11,6 @@
         "inIndex": false
     },
 	{
-		"name": "article_id",
-		"dbType": "integer:unsigned:foreign,articles,id",
-		"htmlType": "text",
-		"relation": "mt1,Article,article_id,id"
-	},
-    {
         "name": "comment",
         "dbType": "string",
         "htmlType": "text",
