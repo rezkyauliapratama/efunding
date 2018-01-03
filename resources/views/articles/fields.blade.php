@@ -16,6 +16,12 @@
     {!! Form::textarea('body', null, ['class' => 'form-control']) !!}
 </div>
 
+<!-- Post Image -->
+<div class="form-group col-sm-12">
+    {!! Form::label('image_name', 'Image:') !!}
+    {!! Form::file('image_name', null, ['class' => 'form-control']) !!}
+</div>
+
 <!-- Post Type Field -->
 <div class="form-group col-sm-12">
     {!! Form::label('post_type', 'Post Type:') !!}
