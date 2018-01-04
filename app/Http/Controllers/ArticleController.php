@@ -53,16 +53,48 @@ class ArticleController extends AppBaseController
      *
      * @return Response
      */
+    /*
     public function store(CreateArticleRequest $request)
     {
         $input = $request->all();
 
         $article = $this->articleRepository->create($input);
 
+
+
         Flash::success('Article saved successfully.');
 
         return redirect(route('articles.index'));
     }
+    */
+
+    public function store(CreateArticleRequest $request)
+    {
+        $input = $request->all();
+
+        $this->validate($request, [
+        'title' => ['required','min:3'],
+        'body' => ['required','min:3'],
+        'image_name' => ['max:2024'],
+
+        ]);
+        
+        $data = $request->input('image_name');
+        $image_name = $request->file('image_name')->getClientOriginalName();
+        $destination = base_path() . '\storage\app\images';
+        $request->file('image_name')->move($destination, $image_name);
+
+        $data['image_name'] = $image_name;
+        $article = $this->articleRepository->create($input);
+
+        ArticleController::create([$data, $input]);
+
+        Flash::success('Article saved successfully.');
+
+        return redirect(route('articles.index'));
+    }
+
+    
 
     /**
      * Display the specified Article.

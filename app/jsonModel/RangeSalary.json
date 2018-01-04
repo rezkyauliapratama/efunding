@@ -1,0 +1,28 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },    
+    {
+        "name": "name",
+        "dbType": "string,20",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Lend"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Borrower"
+    }		
+]
