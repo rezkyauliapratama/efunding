@@ -1,0 +1,119 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },    
+    {
+        "name": "estimated_return",
+        "dbType": "integer",
+        "htmlType": "text"
+    },
+    {
+        "name": "time_range",
+        "dbType": "string,10",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "started_at",
+        "dbType": "dateTime",
+        "htmlType": "date",
+        "searchable": true
+    },
+    {
+        "name": "deadline",
+        "dbType": "dateTime",
+        "htmlType": "date",
+        "searchable": true
+    },
+    {
+        "name": "target_investment",
+        "dbType": "integer",
+        "htmlType": "text"
+    },
+    {
+        "name": "description",
+        "dbType": "string,190",
+        "htmlType": "textarea",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "long_description",
+        "dbType": "string,255",
+        "htmlType": "textarea",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "image",
+        "dbType": "string,20",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "akad_id",
+        "dbType": "integer:unsigned:foreign,akads,id",
+        "htmlType": "text",
+        "relation": "mt1,Akad,akad_id,id"
+    },
+    {
+        "name": "city_id",
+        "dbType": "integer:unsigned:foreign,cities,id",
+        "htmlType": "text",
+        "relation": "mt1,City,city_id,id"
+    },
+    {
+        "name": "category_id",
+        "dbType": "integer:unsigned:foreign,categories,id",
+        "htmlType": "text",
+        "relation": "mt1,Category,category_id,id"
+    },
+    {
+        "name": "borrower_id",
+        "dbType": "integer:unsigned:foreign,borrowers,id",
+        "htmlType": "text",
+        "relation": "mt1,Borrower,borrower,id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Investment"
+
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,BankAccount"
+
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]

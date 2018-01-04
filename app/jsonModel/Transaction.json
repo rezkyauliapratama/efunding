@@ -1,0 +1,68 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },    
+    {
+        "name": "total_transaction",
+        "dbType": "integer"
+
+    },
+    {
+        "name": "type_transaction_id",
+        "dbType": "integer:unsigned:foreign,type_transactions,id",
+        "htmlType": "text",
+        "relation": "mt1,TypeTransaction,type_transaction_id,id"
+    },
+    {
+        "name": "lend_id",
+        "dbType": "integer:unsigned:foreign,lends,id",
+        "htmlType": "text",
+        "relation": "mt1,Lend,lend_id,id"
+    },
+    {
+        "name": "bank_account_id_from",
+        "dbType": "integer:unsigned:foreign,bank_accounts,id",
+        "htmlType": "text",
+        "relation": "mt1,BankAccountFrom,bank_account_id_from,id"
+    },
+    {
+        "name": "bank_account_id_to",
+        "dbType": "integer:unsigned:foreign,bank_accounts,id",
+        "htmlType": "text",
+        "relation": "mt1,BankAccountTo,bank_account_id_to,id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,DtTransaction"
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]

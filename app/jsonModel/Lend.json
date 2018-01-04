@@ -1,0 +1,237 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },    
+	{
+        "name": "name",
+        "dbType": "string,50",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+	{
+        "name": "birth_date",
+        "dbType": "timestamp",
+        "htmlType": "date",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "birth_place",
+        "dbType": "string,20",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "gender",
+        "dbType": "string,10",
+        "htmlType": "radio,Laki-Laki,Perempuan",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "last_education",
+        "dbType": "string,20",
+        "htmlType": "select,SD,SMP,SMA,D1,D2,D3,S1,S2,S3",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "married_status",
+        "dbType": "string,10",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "religion",
+        "dbType": "string,10",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "phone_number",
+        "dbType": "string,20",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "facebook_url",
+        "dbType": "string,51",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "instagram_twitter_url",
+        "dbType": "string,20",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "website_url",
+        "dbType": "string,50",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "address",
+        "dbType": "string,50",
+        "htmlType": "textarea",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "identity_number",
+        "dbType": "string,20",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "identity_image",
+        "dbType": "string,20",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "npwp_number",
+        "dbType": "string,20",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "npwp_image",
+        "dbType": "string,20",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "work",
+        "dbType": "string,20",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "field_work",
+        "dbType": "string,20",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "heir",
+        "dbType": "string,20",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "heir_phone_number",
+        "dbType": "string,20",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "relation_with_heir",
+        "dbType": "string,20",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "user_id",
+        "dbType": "integer:unsigned:foreign,users,id",
+        "htmlType": "text",
+        "relation": "1t1,User,user_id,id"
+    },
+    {
+        "name": "identity_type_id",
+        "dbType": "integer:unsigned:foreign,identity_types,id",
+        "htmlType": "text",
+        "relation": "mt1,IdentityType,identity_type_id,id"
+    },
+    {
+        "name": "range_salary_id",
+        "dbType": "integer:unsigned:foreign,range_salaries,id",
+        "htmlType": "text",
+        "relation": "mt1,RangeSalary,range_salary_id,id"
+    },
+    {
+        "name": "province_id",
+        "dbType": "integer:unsigned:foreign,provinces,id",
+        "htmlType": "text",
+        "relation": "mt1,Province,province_id,id"
+    },
+    {
+        "name": "city_id",
+        "dbType": "integer:unsigned:foreign,cities,id",
+        "htmlType": "text",
+        "relation": "mt1,City,city_id,id"
+    },
+    {
+        "name": "sub_district_id",
+        "dbType": "integer:unsigned:foreign,sub_districts,id",
+        "htmlType": "text",
+        "relation": "mt1,SubDistrict,sub_district_id,id"
+    },
+    {
+        "name": "urban_village_id",
+        "dbType": "integer:unsigned:foreign,urban_villages,id",
+        "htmlType": "text",
+        "relation": "mt1,UrbanVillage,urban_village_id,id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Investment"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,BankAccount"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Transaction"
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+
+]

@@ -25,7 +25,7 @@
 
             <!-- Logo -->
             <a href="#" class="logo">
-                <b>InfyOm</b>
+                <b>E-Funding</b>
             </a>
 
             <!-- Header Navbar -->

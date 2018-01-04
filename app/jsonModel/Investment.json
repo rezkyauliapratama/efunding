@@ -1,0 +1,56 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },    
+    {
+        "name": "total_investment",
+        "dbType": "integer",
+        "htmlType": "text"
+    },
+    {
+        "name": "lend_id",
+        "dbType": "integer:unsigned:foreign,lends,id",
+        "htmlType": "text",
+        "relation": "mt1,Lend,lend_id,id"
+    },
+    {
+        "name": "campaign_id",
+        "dbType": "integer:unsigned:foreign,campaigns,id",
+        "htmlType": "text",
+        "relation": "mt1,Campaign,campaign_id,id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,DtTransaction"
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]

@@ -1,0 +1,64 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },    
+    {
+        "name": "name",
+        "dbType": "string,20",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "province_id",
+        "dbType": "integer:unsigned:foreign,provinces,id",
+        "htmlType": "text",
+        "relation": "mt1,Province,province_id,id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Lend"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Borrower" 
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Campaign"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,SubDistrict"
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]

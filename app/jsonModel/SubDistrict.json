@@ -1,0 +1,38 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },    
+    {
+        "name": "name",
+        "dbType": "string,20",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "city_id",
+        "dbType": "integer:unsigned:foreign,cities,id",
+        "htmlType": "text",
+        "relation": "mt1,City,city_id,id"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Lend"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,UrbanVillage"
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Borrower"
+    }
+]

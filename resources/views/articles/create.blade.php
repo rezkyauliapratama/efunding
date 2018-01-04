@@ -14,7 +14,7 @@
                 <div class="row">
                     <!-- todo : please add new field html for select image from local computer and upload it into server. Save file name into table article -> image_name. -->
                     <!-- todo : use id "image_name" for the new field html-->
-                    {!! Form::open(['route' => 'articles.store']) !!}
+                    {!! Form::open(['route' => 'articles.store', 'files' => true, 'enctype' => 'multipart/form-data', 'method_field' => 'post']) !!}
 
                         @include('articles.fields')
 

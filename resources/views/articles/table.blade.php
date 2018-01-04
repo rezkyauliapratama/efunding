@@ -6,6 +6,7 @@
         <th>Post Type</th>
         <th>Category</th>
         <th>User Id</th>
+        <th>Image Name</th>
         <th colspan="3">Action</th>
     </thead>
     <tbody>
@@ -17,6 +18,7 @@
             <td>{!! $article->post_type !!}</td>
             <td>{!! $article->category !!}</td>
             <td>{!! $article->user_id !!}</td>
+            <td>{!! $article->image_name !!}</td>
             <td>
                 {!! Form::open(['route' => ['articles.destroy', $article->id], 'method' => 'delete']) !!}
                 <div class='btn-group'>
