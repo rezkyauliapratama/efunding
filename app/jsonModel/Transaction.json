@@ -18,17 +18,10 @@
         "searchable": true
     },
     {
-        "name": "investmentid2",
-        "dbType": "integer,10",
+        "name": "type_transaction_id",
+        "dbType": "integer:unsigned:foreign,type_transactions,id",
         "htmlType": "text",
-        "validations": "required",
-        "searchable": true
-    },
-    {
-        "name": "type_transaciton_id",
-        "dbType": "integer:unsigned:foreign,typetransacitons,id",
-        "htmlType": "text",
-        "relation": "mt1,TypeTransaciton,type_transaciton_id,id"
+        "relation": "mt1,TypeTransaction,type_transaction_id,id"
     },
     {
         "name": "lend_id",
@@ -38,24 +31,12 @@
     },
     {
         "name": "bank_account_id",
-        "dbType": "integer:unsigned:foreign,bankaccounts,id",
+        "dbType": "integer:unsigned:foreign,bank_accounts,id",
         "htmlType": "text",
         "relation": "mt1,BankAccounts,bank_account_id,id"
     },
     {
         "type": "relation",
-        "relation": "mt1,TypeTransaciton"
-    },
-    {
-        "type": "relation",
-        "relation": "mt1,Lend"
-    },
-    {
-        "type": "relation",
         "relation": "1tm,DtTransaction"
-    },
-    {
-        "type": "relation",
-        "relation": "mt1,BankAccounts"
-    }		
+    }
 ]

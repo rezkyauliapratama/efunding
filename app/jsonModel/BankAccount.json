@@ -21,10 +21,6 @@
         "name": "bank_id",
         "dbType": "integer:unsigned:foreign,banks,id",
         "htmlType": "text",
-        "relation": "1t1,Bank,bank_id,id"
-    },
-    {
-        "type": "relation",
-        "relation": "mt1,Bank"
-    }		
+        "relation": "mt1,Bank,bank_id,id"
+    }
 ]

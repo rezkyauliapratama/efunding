@@ -19,7 +19,7 @@
     },
     {
         "name": "sub_district_id",
-        "dbType": "integer:unsigned:foreign,subdistrict,id",
+        "dbType": "integer:unsigned:foreign,sub_districts,id",
         "htmlType": "text",
         "relation": "mt1,SubDistrict,sub_district_id,id"
     },
@@ -29,10 +29,28 @@
     },
     {
         "type": "relation",
-        "relation": "mt1,SubDistrict"
+        "relation": "1tm,Borrower"
     },
     {
-        "type": "relation",
-        "relation": "1tm,Borrower"
-    },		
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
 ]

@@ -45,3 +45,31 @@ Route::resource('articles', 'ArticleController');
 
 
 Route::resource('comments', 'CommentController');
+
+
+
+
+
+
+
+Route::resource('referrals', 'ReferralController');
+
+Route::resource('rangeSalaries', 'RangeSalaryController');
+
+Route::resource('identityTypes', 'IdentityTypeController');
+
+Route::resource('provinces', 'ProvinceController');
+
+Route::resource('cities', 'CityController');
+
+Route::resource('subDistricts', 'SubDistrictController');
+
+Route::resource('urbanVillages', 'UrbanVillageController');
+
+Route::resource('akads', 'AkadController');
+
+Route::resource('categories', 'CategoryController');
+
+Route::resource('banks', 'BankController');
+
+Route::resource('typeTransactions', 'TypeTransactionController');

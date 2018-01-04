@@ -31,14 +31,6 @@
     },
     {
         "type": "relation",
-        "relation": "mt1,Lend"
-    },
-    {
-        "type": "relation",
         "relation": "1tm,DtTransaction"
-    },
-    {
-        "type": "relation",
-        "relation": "mt1,Campaign"
-    }		
+    }
 ]

@@ -87,17 +87,6 @@
     {
         "type": "relation",
         "relation": "1tm,Investment"
-    },
-    {
-        "type": "relation",
-        "relation": "mt1,City"
-    },
-    {
-        "type": "relation",
-        "relation": "mt1,Akad"
-    },
-    {
-        "type": "relation",
-        "relation": "mt1,Category"
+
     }		
 ]

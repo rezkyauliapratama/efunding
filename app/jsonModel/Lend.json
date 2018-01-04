@@ -167,7 +167,7 @@
         "name": "identity_type_id",
         "dbType": "integer:unsigned:foreign,identitytypes,id",
         "htmlType": "text",
-        "relation": "1t1,IdentityType,identity_type_id,id"
+        "relation": "mt1,IdentityType,identity_type_id,id"
     },
     {
         "name": "range_salary_id",
@@ -198,34 +198,6 @@
         "dbType": "integer:unsigned:foreign,urbanvilages,id",
         "htmlType": "text",
         "relation": "mt1,UrbanVilage,urban_village_id,id"
-    }, 	
-	{
-        "type": "relation",
-        "relation": "1t1,User"
-    },
-    {
-        "type": "relation",
-        "relation": "mt1,RangeSalary"
-    },
-    {
-        "type": "relation",
-        "relation": "1t1,IdentityType"
-    },
-    {
-        "type": "relation",
-        "relation": "mt1,Province"
-    },
-    {
-        "type": "relation",
-        "relation": "mt1,City"
-    },
-    {
-        "type": "relation",
-        "relation": "mt1,SubDistrict"
-    },
-    {
-        "type": "relation",
-        "relation": "mt1,UrbanVilage"
     },
     {
         "type": "relation",
