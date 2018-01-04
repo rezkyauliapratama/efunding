@@ -1,0 +1,67 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },    
+    {
+        "name": "total_transaction",
+        "dbType": "integer,10",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "investmentid2",
+        "dbType": "integer,10",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "type_transaciton_id",
+        "dbType": "integer:unsigned:foreign,typetransacitons,id",
+        "htmlType": "text",
+        "relation": "mt1,TypeTransaciton,type_transaciton_id,id"
+    },
+    {
+        "name": "investment_id",
+        "dbType": "integer:unsigned:foreign,investments,id",
+        "htmlType": "text",
+        "relation": "mtm,Investment,investment_id,id"
+    },
+    {
+        "name": "lend_id",
+        "dbType": "integer:unsigned:foreign,lends,id",
+        "htmlType": "text",
+        "relation": "mt1,Lend,lend_id,id"
+    },
+    {
+        "name": "bank_account_id",
+        "dbType": "integer:unsigned:foreign,bankaccounts,id",
+        "htmlType": "text",
+        "relation": "mt1,BankAccounts,bank_account_id,id"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,TypeTransaciton"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,Lend"
+    },
+    {
+        "type": "relation",
+        "relation": "mtm,Investment"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,BankAccounts"
+    }		
+]

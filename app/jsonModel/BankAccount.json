@@ -1,0 +1,30 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },    
+    {
+        "name": "account_number",
+        "dbType": "integer,10",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "bank_id",
+        "dbType": "integer:unsigned:foreign,banks,id",
+        "htmlType": "text",
+        "relation": "1t1,Bank,bank_id,id"
+    },
+    {
+        "type": "relation",
+        "relation": "mt1,Bank"
+    }		
+]
