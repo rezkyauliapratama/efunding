@@ -31,12 +31,6 @@
         "relation": "mt1,TypeTransaciton,type_transaciton_id,id"
     },
     {
-        "name": "investment_id",
-        "dbType": "integer:unsigned:foreign,investments,id",
-        "htmlType": "text",
-        "relation": "mtm,Investment,investment_id,id"
-    },
-    {
         "name": "lend_id",
         "dbType": "integer:unsigned:foreign,lends,id",
         "htmlType": "text",
@@ -58,7 +52,7 @@
     },
     {
         "type": "relation",
-        "relation": "mtm,Investment"
+        "relation": "1tm,DtTransaction"
     },
     {
         "type": "relation",

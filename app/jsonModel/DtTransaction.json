@@ -11,34 +11,30 @@
         "inIndex": false
     },    
     {
-        "name": "total_investment",
-        "dbType": "integer,10",
+        "name": "name",
+        "dbType": "string,20",
         "htmlType": "text",
         "validations": "required",
         "searchable": true
     },
     {
-        "name": "lend_id",
-        "dbType": "integer:unsigned:foreign,lends,id",
+        "name": "transaction_id",
+        "dbType": "integer:unsigned:foreign,transactions,id",
         "htmlType": "text",
-        "relation": "mt1,Lend,lend_id,id"
+        "relation": "mt1,Transaction,transaction_id,id"
     },
     {
-        "name": "campaign_id",
-        "dbType": "integer:unsigned:foreign,campaigns,id",
+        "name": "investment_id",
+        "dbType": "integer:unsigned:foreign,investments,id",
         "htmlType": "text",
-        "relation": "mt1,Campaign,campaign_id,id"
+        "relation": "mt1,Investment,investment_id,id"
     },
     {
         "type": "relation",
-        "relation": "mt1,Lend"
+        "relation": "mt1,Transaction"
     },
     {
         "type": "relation",
-        "relation": "1tm,DtTransaction"
-    },
-    {
-        "type": "relation",
-        "relation": "mt1,Campaign"
-    }		
+        "relation": "mt1,Investment"
+    }
 ]
