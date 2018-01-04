@@ -12,23 +12,14 @@
     },    
     {
         "name": "total_transaction",
-        "dbType": "integer,10",
-        "htmlType": "text",
-        "validations": "required",
-        "searchable": true
+        "dbType": "integer"
+
     },
     {
-        "name": "investmentid2",
-        "dbType": "integer,10",
+        "name": "type_transaction_id",
+        "dbType": "integer:unsigned:foreign,type_transactions,id",
         "htmlType": "text",
-        "validations": "required",
-        "searchable": true
-    },
-    {
-        "name": "type_transaciton_id",
-        "dbType": "integer:unsigned:foreign,typetransacitons,id",
-        "htmlType": "text",
-        "relation": "mt1,TypeTransaciton,type_transaciton_id,id"
+        "relation": "mt1,TypeTransaction,type_transaction_id,id"
     },
     {
         "name": "lend_id",
@@ -37,25 +28,41 @@
         "relation": "mt1,Lend,lend_id,id"
     },
     {
-        "name": "bank_account_id",
-        "dbType": "integer:unsigned:foreign,bankaccounts,id",
+        "name": "bank_account_id_from",
+        "dbType": "integer:unsigned:foreign,bank_accounts,id",
         "htmlType": "text",
-        "relation": "mt1,BankAccounts,bank_account_id,id"
+        "relation": "mt1,BankAccountFrom,bank_account_id_from,id"
     },
     {
-        "type": "relation",
-        "relation": "mt1,TypeTransaciton"
-    },
-    {
-        "type": "relation",
-        "relation": "mt1,Lend"
+        "name": "bank_account_id_to",
+        "dbType": "integer:unsigned:foreign,bank_accounts,id",
+        "htmlType": "text",
+        "relation": "mt1,BankAccountTo,bank_account_id_to,id"
     },
     {
         "type": "relation",
         "relation": "1tm,DtTransaction"
     },
     {
-        "type": "relation",
-        "relation": "mt1,BankAccounts"
-    }		
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
 ]

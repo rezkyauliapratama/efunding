@@ -12,10 +12,8 @@
     },    
     {
         "name": "total_investment",
-        "dbType": "integer,10",
-        "htmlType": "text",
-        "validations": "required",
-        "searchable": true
+        "dbType": "integer",
+        "htmlType": "text"
     },
     {
         "name": "lend_id",
@@ -31,14 +29,28 @@
     },
     {
         "type": "relation",
-        "relation": "mt1,Lend"
-    },
-    {
-        "type": "relation",
         "relation": "1tm,DtTransaction"
     },
     {
-        "type": "relation",
-        "relation": "mt1,Campaign"
-    }		
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
 ]

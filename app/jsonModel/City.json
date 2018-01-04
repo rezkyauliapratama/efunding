@@ -29,10 +29,6 @@
     },
     {
         "type": "relation",
-        "relation": "mt1,Province"
-    },
-    {
-        "type": "relation",
         "relation": "1tm,Borrower" 
     },
     {
@@ -42,5 +38,27 @@
     {
         "type": "relation",
         "relation": "1tm,SubDistrict"
-    }		
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
 ]
