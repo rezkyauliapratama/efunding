@@ -1,6 +1,6 @@
 [
     {
-        "name": "id,10",
+        "name": "id",
         "dbType": "increments",
         "htmlType": "",
         "validations": "",
@@ -165,13 +165,13 @@
     },
     {
         "name": "identity_type_id",
-        "dbType": "integer:unsigned:foreign,identitytypes,id",
+        "dbType": "integer:unsigned:foreign,identity_types,id",
         "htmlType": "text",
         "relation": "mt1,IdentityType,identity_type_id,id"
     },
     {
         "name": "range_salary_id",
-        "dbType": "integer:unsigned:foreign,rangesalarys,id",
+        "dbType": "integer:unsigned:foreign,range_salaries,id",
         "htmlType": "text",
         "relation": "mt1,RangeSalary,range_salary_id,id"
     },
@@ -183,21 +183,21 @@
     },
     {
         "name": "city_id",
-        "dbType": "integer:unsigned:foreign,citys,id",
+        "dbType": "integer:unsigned:foreign,cities,id",
         "htmlType": "text",
         "relation": "mt1,City,city_id,id"
     },
     {
         "name": "sub_district_id",
-        "dbType": "integer:unsigned:foreign,subdistricts,id",
+        "dbType": "integer:unsigned:foreign,sub_districts,id",
         "htmlType": "text",
         "relation": "mt1,SubDistrict,sub_district_id,id"
     },
     {
         "name": "urban_village_id",
-        "dbType": "integer:unsigned:foreign,urbanvilages,id",
+        "dbType": "integer:unsigned:foreign,urban_villages,id",
         "htmlType": "text",
-        "relation": "mt1,UrbanVilage,urban_village_id,id"
+        "relation": "mt1,UrbanVillage,urban_village_id,id"
     },
     {
         "type": "relation",
@@ -205,7 +205,33 @@
     },
     {
         "type": "relation",
+        "relation": "1tm,BankAccount"
+    },
+    {
+        "type": "relation",
         "relation": "1tm,Transaction"
+    },
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
     }
 
 ]

@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class IdentityType
  * @package App\Models
- * @version January 4, 2018, 1:27 pm UTC
+ * @version January 4, 2018, 4:57 pm UTC
  */
 class IdentityType extends Model
 {
@@ -43,18 +43,18 @@ class IdentityType extends Model
     ];
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
      **/
-    public function lend()
+    public function lends()
     {
-        return $this->hasOne(\App\Models\Lend::class);
+        return $this->hasMany(\App\Models\Lend::class);
     }
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
      **/
-    public function borrower()
+    public function borrowers()
     {
-        return $this->hasOne(\App\Models\Borrower::class);
+        return $this->hasMany(\App\Models\Borrower::class);
     }
 }

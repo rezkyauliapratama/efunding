@@ -21,9 +21,6 @@
     <a href="{!! route('rangeSalaries.index') !!}"><i class="fa fa-edit"></i><span>RangeSalaries</span></a>
 </li>
 
-<li class="{{ Request::is('identityTypes*') ? 'active' : '' }}">
-    <a href="{!! route('identityTypes.index') !!}"><i class="fa fa-edit"></i><span>IdentityTypes</span></a>
-</li>
 
 <li class="{{ Request::is('provinces*') ? 'active' : '' }}">
     <a href="{!! route('provinces.index') !!}"><i class="fa fa-edit"></i><span>Provinces</span></a>
@@ -55,5 +52,56 @@
 
 <li class="{{ Request::is('typeTransactions*') ? 'active' : '' }}">
     <a href="{!! route('typeTransactions.index') !!}"><i class="fa fa-edit"></i><span>TypeTransactions</span></a>
+</li>
+
+
+
+
+
+
+
+
+
+<li class="{{ Request::is('identityTypes*') ? 'active' : '' }}">
+    <a href="{!! route('identityTypes.index') !!}"><i class="fa fa-edit"></i><span>IdentityTypes</span></a>
+</li>
+
+
+<li class="{{ Request::is('borrowers*') ? 'active' : '' }}">
+    <a href="{!! route('borrowers.index') !!}"><i class="fa fa-edit"></i><span>Borrowers</span></a>
+</li>
+
+
+
+
+<li class="{{ Request::is('campaigns*') ? 'active' : '' }}">
+    <a href="{!! route('campaigns.index') !!}"><i class="fa fa-edit"></i><span>Campaigns</span></a>
+</li>
+
+
+
+
+<li class="{{ Request::is('lends*') ? 'active' : '' }}">
+    <a href="{!! route('lends.index') !!}"><i class="fa fa-edit"></i><span>Lends</span></a>
+</li>
+
+
+<li class="{{ Request::is('investments*') ? 'active' : '' }}">
+    <a href="{!! route('investments.index') !!}"><i class="fa fa-edit"></i><span>Investments</span></a>
+</li>
+
+
+
+<li class="{{ Request::is('dtTransactions*') ? 'active' : '' }}">
+    <a href="{!! route('dtTransactions.index') !!}"><i class="fa fa-edit"></i><span>DtTransactions</span></a>
+</li>
+
+
+<li class="{{ Request::is('bankAccounts*') ? 'active' : '' }}">
+    <a href="{!! route('bankAccounts.index') !!}"><i class="fa fa-edit"></i><span>BankAccounts</span></a>
+</li>
+
+<li class="{{ Request::is('transactions*') ? 'active' : '' }}">
+    <a href="{!! route('transactions.index') !!}"><i class="fa fa-edit"></i><span>Transactions</span></a>
 </li>
 

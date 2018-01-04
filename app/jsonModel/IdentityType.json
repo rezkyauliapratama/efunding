@@ -19,11 +19,11 @@
     },
     {
         "type": "relation",
-        "relation": "1t1,Lend"
+        "relation": "1tm,Lend"
     },
     {
         "type": "relation",
-        "relation": "1t1,Borrower"
+        "relation": "1tm,Borrower"
     },
     {
         "name": "created_at",

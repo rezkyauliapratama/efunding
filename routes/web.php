@@ -56,7 +56,7 @@ Route::resource('referrals', 'ReferralController');
 
 Route::resource('rangeSalaries', 'RangeSalaryController');
 
-Route::resource('identityTypes', 'IdentityTypeController');
+
 
 Route::resource('provinces', 'ProvinceController');
 
@@ -73,3 +73,57 @@ Route::resource('categories', 'CategoryController');
 Route::resource('banks', 'BankController');
 
 Route::resource('typeTransactions', 'TypeTransactionController');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Route::resource('identityTypes', 'IdentityTypeController');
+
+
+
+Route::resource('borrowers', 'BorrowerController');
+
+
+
+
+
+
+
+Route::resource('campaigns', 'CampaignController');
+
+
+
+
+
+
+
+Route::resource('lends', 'LendController');
+
+
+
+Route::resource('investments', 'InvestmentController');
+
+
+
+
+
+Route::resource('dtTransactions', 'DtTransactionController');
+
+
+
+Route::resource('bankAccounts', 'BankAccountController');
+
+Route::resource('transactions', 'TransactionController');

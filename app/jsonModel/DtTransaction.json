@@ -30,11 +30,25 @@
         "relation": "mt1,Investment,investment_id,id"
     },
     {
-        "type": "relation",
-        "relation": "mt1,Transaction"
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
     },
     {
-        "type": "relation",
-        "relation": "mt1,Investment"
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
     }
 ]
