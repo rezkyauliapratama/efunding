@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>InfyOm Generator</title>
+    <title>Efunding | Home</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -22,37 +22,35 @@
     <div class="wrapper">
         <!-- Main Header -->
         <header class="main-header">
-
             <!-- Logo -->
-            <a href="#" class="logo">
-                <b>E-Funding</b>
-            </a>
-
+            <img class="logo" src="..\storage\app\images\logo.png" style="background-color: green">
             <!-- Header Navbar -->
-            <nav class="navbar navbar-static-top" role="navigation">
+            <nav class="navbar navbar-static-top" rule="navigation" style="background-color: green">
                 <!-- Sidebar toggle button-->
                 <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
                     <span class="sr-only">Toggle navigation</span>
                 </a>
                 <!-- Navbar Right Menu -->
-                <div class="navbar-custom-menu">
+                <div class="navbar-custom-menu navbar-right">
+
                     <ul class="nav navbar-nav">
                         <!-- User Account Menu -->
                         <li class="dropdown user user-menu">
                             <!-- Menu Toggle Button -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <!-- The user image in the navbar-->
-                                <img src="http://infyom.com/images/logo/blue_logo_150x150.jpg"
-                                     class="user-image" alt="User Image"/>
+                                <!--<img src="..\storage\app\images\hadi.jpg"
+                                     class="user-image" alt="User Image"/>-->
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                                <span class="hidden-xs">{!! Auth::user()->name !!}</span>
+                                <span >Assalamualaikum, {!! Auth::user()->name !!} </span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- The user image in the menu -->
-                                <li class="user-header">
-                                    <img src="http://infyom.com/images/logo/blue_logo_150x150.jpg"
+                                <li class="user-header" style="background-color: green">
+                                    <img src="..\storage\app\images\hadi.jpg"
                                          class="img-circle" alt="User Image"/>
                                     <p>
+                                        H
                                         {!! Auth::user()->name !!}
                                         <small>Member since {!! Auth::user()->created_at->format('M. Y') !!}</small>
                                     </p>
@@ -88,7 +86,7 @@
 
         <!-- Main Footer -->
         <footer class="main-footer" style="max-height: 100px;text-align: center">
-            <strong>Copyright © 2016 <a href="#">Company</a>.</strong> All rights reserved.
+            <strong>Copyright © 2017 <a href="#">Resky_Project</a>.</strong> All rights reserved.
         </footer>
 
     </div>

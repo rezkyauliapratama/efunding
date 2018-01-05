@@ -1,6 +1,5 @@
 
 
-
 <li class="{{ Request::is('referrals*') ? 'active' : '' }}">
     <a href="{!! route('referrals.index') !!}"><i class="fa fa-edit"></i><span>Referrals</span></a>
 </li>

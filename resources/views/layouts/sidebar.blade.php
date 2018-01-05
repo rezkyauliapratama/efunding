@@ -4,12 +4,15 @@
     <section class="sidebar">
 
         <!-- Sidebar user panel (optional) -->
+        
+
         <div class="user-panel">
-            <div class="pull-left image">
-                <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAi1AAAAJDhkZTcwZjY4LWU1ZTYtNDBlNS1hMzc5LTE4NDc0ODZkMmU5MA.jpg" class="img-circle"
-                     alt="User Image"/>
+            <center>
+            <div class="image">
+                <img src="..\storage\app\images\hadi.jpg" class="img-circle"
+                     alt="User Image" style="max-width: 75px;max-height: : 75px" />
             </div>
-            <div class="pull-left info">
+            <div class="info" style="color: #ffffff">
                 @if (Auth::guest())
                 <p>InfyOm</p>
                 @else
@@ -18,10 +21,12 @@
                 <!-- Status -->
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
+            </center>
         </div>
+        
 
         <!-- search form (Optional) -->
-        <form action="#" method="get" class="sidebar-form">
+        <!--<form action="#" method="get" class="sidebar-form">
             <div class="input-group">
                 <input type="text" name="q" class="form-control" placeholder="Search..."/>
           <span class="input-group-btn">
@@ -29,12 +34,15 @@
             </button>
           </span>
             </div>
-        </form>
+        </form>-->
         <!-- Sidebar Menu -->
+
+
 
         <ul class="sidebar-menu">
             @include('layouts.menu')
         </ul>
+
         <!-- /.sidebar-menu -->
     </section>
     <!-- /.sidebar -->
